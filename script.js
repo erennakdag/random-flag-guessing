@@ -525,11 +525,11 @@ checkbox.addEventListener("click", (e) => {
 function getRandomFlag() {
   const flag = document.getElementById("flag");
   const answer = document.getElementById("answer");
-  answer.innerHTML = "Guessing...";
+  answer.textContent = "Guessing...";
   const index = Math.floor(Math.random() * countryCodes[lang].length);
   flag.src = imgSrc(countryCodes[lang][index].code.toLowerCase());
   flag.alt = countryCodes[lang][index].name;
   setTimeout(() => {
-    answer.innerHTML = countryCodes[lang][index].name;
+    answer.textContent = countryCodes[lang][index].name;
   }, 3000);
 }
