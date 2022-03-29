@@ -7,14 +7,36 @@
     <script defer src="script.js"></script>
 
     <style>
-      #flag {
-        width: 50vw;
-        height: 50vw;
+      body {
+        height: fit-content;
+        background-color: #011e3d;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-      .center {
-        margin: auto;
-        width: 50%;
-        padding: 10px;
+      #title {
+        color: #f2f2f2;
+        font-size: 50px;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        margin-top: 20px;
+      }
+      #flag {
+        height: 420px;
+        width: 528px;
+      }
+      #answer {
+        color: #f2f2f2;
+        font-size: 30px;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .container {
+        padding: 50px;
+        background-color: #f2f2f2;
+        border-radius: 30px;
       }
     </style>
 
@@ -22,14 +44,16 @@
   </head>
   <body>
     <main>
-      <div class="center">
-        <img
-          id="flag"
-          src="https://flagcdn.com/za.svg"
-          width="30"
-          alt="South Africa"
-        />
+      <h1 id="title">Guess the Flag</h1>
+
+      <div class="container">
+        <img id="flag" src="https://flagcdn.com/tr.svg" alt="Turkey" />
       </div>
+
+      <p id="answer">TURKEY</p>
+
+      <input type="checkbox" name="tr" value="tr" id="language" />
+      <label style="color: #f2f2f2" for="tr">Türkçe</label>
     </main>
   </body>
 </html>
