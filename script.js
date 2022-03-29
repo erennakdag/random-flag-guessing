@@ -512,6 +512,8 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
+document.querySelector("#get-flag").addEventListener("click", getRandomFlag);
+
 let lang = "en";
 
 // add an onChange eventlistener to the input element with the id "language"
