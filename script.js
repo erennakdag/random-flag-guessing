@@ -404,7 +404,7 @@ countryCodes = {
     { code: "MS", name: "Montserrat" },
     { code: "MA", name: "Fas" },
     { code: "MZ", name: "Mozambik" },
-    { code: "AA", name: "Myanmar" },
+    { code: "MM", name: "Myanmar" },
     { code: "NA", name: "Namibya" },
     { code: "NR", name: "Nauru" },
     { code: "NP", name: "Nepal" },
